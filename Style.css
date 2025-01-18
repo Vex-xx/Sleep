@@ -1,0 +1,507 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:#484b68;
+    display: flex;
+}
+
+.sidebar{
+    border: solid #fbe9d0 3px;
+    background: #8590aa;
+    width: 30vw;
+    height: 100vh;
+    transition: all 0.5s;
+    position: sticky;
+    top: 0; 
+    border-top: none;
+    margin-right: 3% 5%;
+}
+
+.sidebar.active{
+    width: 5vw;
+}
+
+.sidebar div:nth-child(1){
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    padding: 1%;
+    background: #8590aa;
+    transition: background-color 0.5s;
+}
+
+.sidebar.active div:nth-child(1){
+    background: #8590aa;
+    transition: all 0.5s;
+}
+
+.sidebar div:nth-child(1) img{
+    width: 5vw;
+    height: 10vh;
+    border-radius: 100%;
+    position: relative;
+    top: 10px;
+    transition: all 0.5s;
+}
+
+.sidebar.active div:nth-child(1) img{
+    top: 40px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.sidebar div:nth-child(1) span{
+    position: relative;
+    top: 38px;
+    left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.sidebar.active div:nth-child(1) span{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.sidebar div:nth-child(1) i{
+    padding: 1%;
+    font-size: 23px;
+    position: absolute;
+    right: 5px;
+
+}
+
+.sidebar div:nth-child(1) i:hover{
+    cursor: pointer;
+}
+
+.sidebar.active div:nth-child(1) i{
+    top: 5px;
+    right: 28px;
+    transition: all 0.5s;
+}
+
+.sidebar li{
+    text-align: center;
+    list-style: none;
+    height: 10vh;
+}
+
+.sidebar li:hover{
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.sidebar.active li{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.sidebar a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration-line: none;
+    color: #fbe9d0;
+    padding: 2%;
+    position: relative;
+    top: 20px;
+}
+
+.sidebar a:hover{
+    color: black;
+    transition: all 1.5s;
+}
+
+.page{
+    width: calc(100% - 5vw);
+}
+
+.head{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    background: #D3E9FF;
+    display: flex;
+}
+
+.head div:nth-child(2){
+    width: 70%;
+    padding: 3%;
+}
+
+.Headimg{
+    width: 15%;
+    padding: 2%;
+}
+
+.head img{
+    width: 8vw;
+    height: 13vh;
+    border: solid #D3E9FF 2px;
+    border-radius: 50%;
+}
+
+.body,.benefits,.effects{
+    width: 100%;
+    margin-top: 3%;
+}
+
+.chatbox{
+    height: 50vh;
+}
+
+.chat{
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+    left: 30%;
+    top: 10px;
+    background: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.chat input{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 400px;
+    height: 30px;
+}
+
+.chat button{
+    width: 40px;
+    height: 30px;
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer div{
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 20 px;
+    text-align: center;
+}
+
+.title{
+    background: #D3E9FF;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #D3E9FF;
+    padding: 2%;
+}
+
+.next{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    margin: 2%;
+}
+
+.next:hover{
+    color: #484b68;
+    transition: all 1s;
+}
+
+.text{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+}
+
+.border{
+    background: #8590aa;
+    border-radius: 10px;
+    border: solid #fbe9d0 3px;
+    margin: 3% 2%;
+}
+
+li{
+    font-size: 15px;
+    margin: 2% 4%;
+    color: White;
+}
+
+.body img{
+    width: 30%;
+    height: 50%;
+}
+
+.benefits img,.effects img{
+    width: 30vw;
+    height: 40vh;
+    margin: 0 2%;
+}
+
+.contact{
+    height: 20vh;
+    background: #D3E9FF;
+    padding: 4%;
+}
+
+.link1,.link2,.link3,.link4{
+    font-size: 40px;
+    margin: 0 2%;
+}
+
+.link1:hover,.link2:hover,.link3:hover,.link4:hover{
+    animation: grower 2s infinite;
+}
+
+.merge{
+    display: flex;
+}
+
+@keyframes grower{
+    0%{
+        font-size: 40px;        
+    }
+
+    50%{
+        font-size: 60px;
+    }
+
+    100%{
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 576px){
+    .sidebar{
+        width: 10vw;
+        transition: all 0.5s;
+        float: left;
+    }
+
+    body{
+        display: block;
+        height: 550vh;
+    }
+
+    .sidebar.active{
+        width: 100%;
+        transition: all 0.5s;
+    }
+
+    .sidebar div:nth-child(1){
+        background: #8590aa;
+        transition: all 0.5s;
+    }
+
+    .sidebar.active div:nth-child(1){
+        background: #D3E9FF;
+        transition: all 0.5s;
+    }
+
+    .sidebar div:nth-child(1) img{
+        opacity: 0;
+    }
+
+    .sidebar.active div:nth-child(1) img{
+        opacity: 1;
+        width: 13vw;
+        height: 11vh;
+        top: 10px;
+        left: 10%;
+    }
+
+    .sidebar div:nth-child(1) span{
+        opacity: 0;
+    }
+
+    .sidebar.active div:nth-child(1) span{
+        opacity: 1;
+        left: 20%;
+    }
+
+    .head div:nth-child(2){
+        position: relative;
+        top: 20%;
+    }
+
+    .sidebar li{
+        opacity: 0;
+    }
+
+    .sidebar.active li{
+        opacity: 1;
+    }
+
+    .sidebar div:nth-child(1) i{
+        font-size: 20px;
+        left: 14px;
+        top: 10px;
+    }
+
+    .sidebar.active div:nth-child(1) i{
+        left: 92%;
+        transition: all 0.5s;
+    }
+
+    .page{
+        width: calc(100% - 10vw);
+        float: left;
+    }
+
+    .head{
+        height: 13vh;
+    }
+
+    .Headimg{
+        width: 16%;
+        height: 13vh;
+    }
+
+    .Headimg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .merge{
+        display: block;
+    }
+
+    .body img{
+        width: 30vw;
+        height: 20vh;
+        margin: 0 30%;
+    }
+
+    .text{
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    li{
+        font-size: 10px;
+    }
+
+    .title,.subtitle,.next{
+        font-size: 15px;
+    }
+
+    .benefits img,.effects img{
+        width: 30vw;
+        height: 20vh;
+        margin: 0 30%;
+    }
+
+    .contact{
+        height: auto;
+    }
+
+    .link1,.link2,.link3,.link4{
+        font-size: 20px;
+    }
+
+    .link1:hover,.link2:hover,.link3:hover,.link4:hover{
+        animation: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .sidebar div:nth-child(1) span{
+        font-size: 15px;
+        position: relative;
+        top: 30px;
+        left: 5px;
+    }
+
+    .sidebar.active div:nth-child(1) i{
+        right: 12px;
+    }
+
+    .sidebar div:nth-child(1) img{
+        width: 6vw;
+        height: 9vh;
+        margin: 5% 2%;
+    }
+
+    .sidebar div:nth-child(1){
+        height: 13vh;
+        padding: 0;
+    }
+
+    .sidebar a{
+        font-size: 15px;
+    }
+
+    .merge{
+        display: block;
+    }
+
+    .body img,.benefits img,.effects img{
+        width: 30vw;
+        height: 20vh;
+        margin: 0 30%;
+    }
+
+    .head{
+        height: 13vh;
+    }
+
+    .Headimg{
+        width: 16%;
+        height: 13vh;
+    }
+
+    .Headimg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .text{
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    li{
+        font-size: 10px;
+    }
+
+    .title,.subtitle,.next{
+        font-size: 15px;
+    }
+
+    .contact{
+        height: auto;
+    }
+
+    .link1,.link2,.link3,.link4{
+        font-size: 25px;
+    }
+
+    .link1:hover,.link2:hover,.link3:hover,.link4:hover{
+        animation: none;
+    }
+}
+
+
